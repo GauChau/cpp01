@@ -6,7 +6,7 @@
 /*   By: gchauvot <gchauvot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 12:30:15 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/06 14:42:20 by gchauvot         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:50:34 by gchauvot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 	std::string const filename = argv[1];
 	std::string const filereplace = filename + ".replace";
 	std::string s1 = argv[2], s2 = argv[3];
-	std::string oldtext, newtext;
+	std::string oldtext;
 
 
 	std::ifstream filein(filename.c_str());
