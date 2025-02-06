@@ -1,6 +1,6 @@
-OUT = Violence
+OUT = sedition
 
-SRC = Weapon.cpp main.cpp  HumanA.cpp HumanB.cpp
+SRC = filehandler.cpp main.cpp
 SRC_OBJS = $(SRC:.cpp=.o)
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 CPP = c++
