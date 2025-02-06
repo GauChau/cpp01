@@ -6,7 +6,7 @@
 /*   By: gchauvot <gchauvot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 15:32:08 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/05 17:49:31 by gchauvot         ###   ########.fr       */
+/*   Updated: 2025/02/06 11:30:33 by gchauvot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,12 @@
 void HumanA::attack(void)
 {
 	std::cout << this->name << " attacks with their "
-		<< this->weapon << std::endl;
+		<< this->weapon.getType() << std::endl;
 }
 
-HumanA::HumanA(std::string name, Weapon& weapon)
+HumanA::HumanA(std::string _name, Weapon& _weapon)
+	: name(_name), weapon(_weapon)
 {
-	this->name = name;
-	this->weapon = weapon.getType();
 }
 
 HumanA::~HumanA()

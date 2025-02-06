@@ -6,7 +6,7 @@
 /*   By: gchauvot <gchauvot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 12:35:25 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/05 17:51:27 by gchauvot         ###   ########.fr       */
+/*   Updated: 2025/02/06 11:48:02 by gchauvot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ public:
 	Weapon(std::string);
 	~Weapon();
 
-	const std::string getType();
+	std::string const &getType();
 	void setType(std::string);
 };
 

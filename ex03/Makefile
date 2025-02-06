@@ -2,7 +2,7 @@ OUT = Violence
 
 SRC = Weapon.cpp main.cpp  HumanA.cpp HumanB.cpp
 SRC_OBJS = $(SRC:.cpp=.o)
-FLAGS = -Wall -Wextra -Werror -g -std=c++98
+FLAGS = -Wall -Wextra -Werror -g
 CPP = c++
 
 all: $(OUT)

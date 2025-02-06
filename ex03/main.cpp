@@ -6,14 +6,12 @@
 /*   By: gchauvot <gchauvot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 15:11:02 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/05 17:48:16 by gchauvot         ###   ########.fr       */
+/*   Updated: 2025/02/06 11:58:24 by gchauvot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
 #include "HumanA.hpp"
 #include "HumanB.hpp"
-
 
 int main()
 {
@@ -22,7 +20,6 @@ int main()
 		HumanA bob("Bob", club);
 		bob.attack();
 		club.setType("some other type of club");
-		printf("JOE\n");
 		bob.attack();
 	}
 
