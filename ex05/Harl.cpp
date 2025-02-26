@@ -6,7 +6,7 @@
 /*   By: gchauvot <gchauvot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/06 14:45:40 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/24 17:19:19 by gchauvot         ###   ########.fr       */
+/*   Updated: 2025/02/06 16:33:34 by gchauvot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,21 +49,14 @@ void Harl::complain(std::string level)
 {
 
 	std::string tab[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	enum levs {DEBUG, INFO, WARNING, ERROR};
 	void (Harl::*ptr[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	Harl f;
 
-	for(int i = 0; i < 5; i++)
+	for(int i = 0; i < 4; i++)
 	{
-		if (i == 4)
-		{
-			std::cout <<"[ Probably complaining about insignificant problems ]" << std::endl;
-			break ;
-		}
 		if(level == tab[i])
 		{
-			for (;i < 4; i++)
-				(f.*ptr[i])();
+			(f.*ptr[i])();
 		}
 	}
 

@@ -1,21 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gchauvot <gchauvot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 12:58:27 by gchauvot          #+#    #+#             */
-/*   Updated: 2025/02/24 12:38:12 by gchauvot         ###   ########.fr       */
+/*   Created: 2025/02/06 14:45:44 by gchauvot          #+#    #+#             */
+/*   Updated: 2025/02/06 15:33:25 by gchauvot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef HARL_HPP
+# define HARL_HPP
 
-int main()
+#include <cstdlib>
+#include <string>
+#include <iostream>
+#include <vector>
+#include <functional>
+#include <stdio.h>
+#include <fstream>
+#include <filesystem>
+
+class Harl
 {
-	Zombie *Xav = newZombie("bruh");
-	randomChump("wassup");
-	delete Xav;
-	return 0;
-}
+private:
+	void debug(void);
+	void info(void);
+	void warning(void);
+	void error(void);
+public:
+	Harl();
+	~Harl();
+	void complain( std::string level );
+};
+
+
+#endif
